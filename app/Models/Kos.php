@@ -12,6 +12,12 @@ class Kos extends Model
         'nama_kos',
         'alamat',
         'harga',
-        'jumlah_kamar'
+        'jumlah_kamar',
     ];
+
+    // Relasi: kos hasMany kamar
+    public function kamar()
+    {
+        return $this->hasMany(Kamar::class, 'kos_id');
+    }
 }

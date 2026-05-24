@@ -60,11 +60,14 @@
             </div>
 
             <div class="d-flex gap-2 mt-4">
-                <a href="{{ route('kos.index') }}" class="btn btn-outline-navy"><i class="bi bi-arrow-left me-1"></i>Kembali</a>
-                <a href="{{ route('kos.edit', $kos->id) }}" class="btn btn-gold"><i class="bi bi-pencil me-1"></i>Edit</a>
-            </div>
+    <a href="{{ route('kos.index') }}" class="btn btn-outline-navy"><i class="bi bi-arrow-left me-1"></i>Kembali</a>
+    <a href="{{ route('kos.edit', $kos->id) }}" class="btn btn-gold"><i class="bi bi-pencil me-1"></i>Edit</a>
+    <a href="{{ route('kamar.index', $kos->id) }}" class="btn btn-gold"><i class="bi bi-door-open me-1"></i> Lihat Kamar</a>
+    </div>
+
         </div>
     </div>
+    
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
